@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLUTO X</title><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow:hidden;
+}
+
+#loader{
+position:fixed;
+inset:0;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+#loader h1{
+font-size:5rem;
+letter-spacing:10px;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+50%{
+opacity:.3;
+}
+}
+
+.stars{
+position:fixed;
+inset:0;
+background-image:
+radial-gradient(2px 2px at 40px 60px,#fff,transparent),
+radial-gradient(2px 2px at 140px 100px,#fff,transparent),
+radial-gradient(1px 1px at 240px 200px,#fff,transparent),
+radial-gradient(2px 2px at 340px 150px,#fff,transparent);
+background-size:500px 500px;
+opacity:.35;
+z-index:-1;
+animation:stars 30s linear infinite;
+}
+
+@keyframes stars{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-500px);
+}
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:2rem;
+font-weight:bold;
+letter-spacing:5px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:relative;
+}
+
+.planet{
+position:absolute;
+width:400px;
+height:400px;
+border-radius:50%;
+right:-120px;
+top:80px;
+background:
+radial-gradient(circle at 30% 30%,
+#666,
+#222,
+#000);
+opacity:.5;
+}
+
+.px-logo{
+font-size:9rem;
+font-weight:900;
+background:linear-gradient(
+90deg,
+#ffffff,
+#9c9c9c,
+#ffffff
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+letter-spacing:-10px;
+text-shadow:
+0 0 20px rgba(255,255,255,.3);
+}
+
+.hero h1{
+font-size:4rem;
+letter-spacing:10px;
+margin-top:10px;
+}
+
+.hero p{
+margin-top:10px;
+color:#bbb;
+letter-spacing:4px;
+}
+
+.notice{
+margin-top:40px;
+max-width:700px;
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+}
+
+.notice h2{
+margin-bottom:20px;
+}
+
+.notice p{
+line-height:1.8;
+letter-spacing:0;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+.phone{
+margin-top:20px;
+font-size:1.2rem;
+letter-spacing:3px;
+}
+
+@media(max-width:768px){
+
+.px-logo{
+font-size:5rem;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.planet{
+width:250px;
+height:250px;
+right:-80px;
+}
+
+}
+
+</style></head><body><div id="loader">
+<h1>PX</h1>
+</div><div class="stars"></div><header>
+<div class="logo">PLUTO X</div>
+</header><section class="hero"><div class="planet"></div><div class="px-logo">PX</div><h1>PLUTO X</h1><p>CREATE YOUR OWN ORBIT</p><div class="notice"><h2>🚧 WEBSITE UNDER DEVELOPMENT</h2><p>The Pluto X website is currently under development.
+
+Online ordering is not available yet.
+
+For enquiries, custom orders, collaborations,
+or updates about upcoming drops, please contact us directly on WhatsApp.
+
+</p><a href="https://wa.me/2348052144422"
+class="whatsapp">
+
+MESSAGE ON WHATSAPP
+
+</a><div class="phone">
+08052144422
+</div></div></section><script>
+
+window.onload = () => {
+
+setTimeout(() => {
+
+document.getElementById("loader").style.display = "none";
+
+},1500);
+
+}
+
+</script></body>
+</html>
